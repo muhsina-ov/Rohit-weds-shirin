@@ -74,7 +74,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.94, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-          className="relative w-[82vw] max-w-[300px]"
+          className="relative w-[86vw] max-w-[320px]"
         >
           {/* halo behind the arch */}
           <div
@@ -86,21 +86,21 @@ export default function Hero() {
             }}
           />
 
-          <svg viewBox="0 0 320 430" className="relative w-full drop-shadow-[0_24px_60px_rgba(0,0,0,0.55)]">
+          <svg viewBox="0 0 320 440" className="relative w-full drop-shadow-[0_24px_60px_rgba(0,0,0,0.55)]">
             <defs>
               <linearGradient id="archFill" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#faf5ea" />
                 <stop offset="100%" stopColor="#f1e6d2" />
               </linearGradient>
             </defs>
-            {/* outer arch */}
+            {/* outer arch - spacious royal Mughal arch */}
             <path
-              d="M 40 410 L 40 175 C 40 105 95 72 160 30 C 225 72 280 105 280 175 L 280 410 Z"
+              d="M 18 430 L 18 170 C 18 100 80 58 160 18 C 240 58 302 100 302 170 L 302 430 Z"
               fill="url(#archFill)"
             />
             {/* inner border */}
             <path
-              d="M 52 400 L 52 178 C 52 116 101 84 160 46 C 219 84 268 116 268 178 L 268 400 Z"
+              d="M 28 420 L 28 172 C 28 106 86 68 160 30 C 234 68 292 106 292 172 L 292 420 Z"
               fill="none"
               stroke="#c9a86a"
               strokeWidth="1.4"
@@ -109,12 +109,12 @@ export default function Hero() {
           </svg>
 
           {/* arch content */}
-          <div className="absolute inset-0 flex flex-col items-center px-6 pt-[20%] text-center">
+          <div className="absolute inset-0 flex flex-col items-center px-6 pt-[14%] sm:pt-[13%] text-center">
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
-              className="font-arabic text-base sm:text-lg leading-relaxed text-[#8a6f4d]"
+              className="font-arabic text-[15px] sm:text-[17px] leading-[1.8] text-[#8a6f4d] select-none pt-1"
             >
               {wedding.verse.arabic}
             </motion.p>
@@ -122,7 +122,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.85, duration: 0.8 }}
-              className="mt-2 font-display text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.25em] text-[#3a3260]"
+              className="mt-2 font-display text-[8.5px] sm:text-[9.5px] font-semibold uppercase tracking-[0.16em] text-[#3a3260] max-w-[215px] text-center"
             >
               {wedding.verse.kicker}
             </motion.p>
@@ -130,7 +130,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="mt-1 font-display text-[10px] sm:text-[11px] italic leading-tight text-[#c96e8c]"
+              className="mt-1.5 font-display text-[9.5px] sm:text-[10.5px] italic leading-snug text-[#c96e8c] max-w-[220px] text-center"
             >
               {wedding.verse.invitation}
             </motion.p>
@@ -138,7 +138,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.9 }}
-              className="mt-1 font-script text-[13vw] leading-[1.05] text-[#4a3f78] sm:text-5xl"
+              className="mt-1 font-script text-[12vw] leading-[1.05] text-[#4a3f78] sm:text-5xl"
             >
               {wedding.bride}
             </motion.h1>
@@ -146,7 +146,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.35, duration: 0.8 }}
-              className="font-script text-3xl leading-none text-[#c96e8c]"
+              className="font-script text-2xl sm:text-3xl leading-none text-[#c96e8c] my-0.5"
             >
               &
             </motion.span>
@@ -154,19 +154,19 @@ export default function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.45, duration: 0.9 }}
-              className="font-script text-[13vw] leading-[1.05] text-[#4a3f78] sm:text-5xl"
+              className="font-script text-[12vw] leading-[1.05] text-[#4a3f78] sm:text-5xl"
             >
               {wedding.groom}
             </motion.h1>
           </div>
         </motion.div>
 
-        {/* ── couple illustration overlapping the arch base ── */}
+        {/* couple illustration overlapping the arch base */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-          className="relative -mt-[22vw] z-10 sm:-mt-20"
+          className="relative -mt-[19vw] z-10 sm:-mt-20"
         >
           <div
             className="absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full blur-[50px]"
