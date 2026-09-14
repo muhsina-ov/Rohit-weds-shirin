@@ -109,12 +109,12 @@ export default function Hero() {
           </svg>
 
           {/* arch content */}
-          <div className="absolute inset-0 flex flex-col items-center px-6 pt-[14%] sm:pt-[13%] text-center">
+          <div className="absolute inset-0 flex flex-col items-center px-6 pt-[28%] sm:pt-[27%] text-center">
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
-              className="font-arabic text-[15px] sm:text-[17px] leading-[1.8] text-[#8a6f4d] select-none pt-1"
+              className="font-arabic text-[16px] sm:text-[18px] leading-[1.8] text-[#8a6f4d] select-none"
             >
               {wedding.verse.arabic}
             </motion.p>
@@ -122,7 +122,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.85, duration: 0.8 }}
-              className="mt-2 font-display text-[8.5px] sm:text-[9.5px] font-semibold uppercase tracking-[0.16em] text-[#3a3260] max-w-[215px] text-center"
+              className="mt-2 font-display text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] text-[#3a3260] max-w-[220px] text-center"
             >
               {wedding.verse.kicker}
             </motion.p>
@@ -130,7 +130,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="mt-1.5 font-display text-[9.5px] sm:text-[10.5px] italic leading-snug text-[#c96e8c] max-w-[220px] text-center"
+              className="mt-1.5 font-display text-[10px] sm:text-[11px] italic leading-snug text-[#c96e8c] max-w-[230px] text-center"
             >
               {wedding.verse.invitation}
             </motion.p>
@@ -138,7 +138,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.9 }}
-              className="mt-1 font-script text-[12vw] leading-[1.05] text-[#4a3f78] sm:text-5xl"
+              className="mt-8 sm:mt-9 font-script text-[13vw] leading-[1.05] text-[#4a3f78] sm:text-5xl"
             >
               {wedding.bride}
             </motion.h1>
@@ -146,7 +146,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.35, duration: 0.8 }}
-              className="font-script text-2xl sm:text-3xl leading-none text-[#c96e8c] my-0.5"
+              className="font-script text-2xl sm:text-3xl leading-none text-[#c96e8c] my-1"
             >
               &
             </motion.span>
@@ -154,7 +154,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.45, duration: 0.9 }}
-              className="font-script text-[12vw] leading-[1.05] text-[#4a3f78] sm:text-5xl"
+              className="font-script text-[13vw] leading-[1.05] text-[#4a3f78] sm:text-5xl"
             >
               {wedding.groom}
             </motion.h1>
