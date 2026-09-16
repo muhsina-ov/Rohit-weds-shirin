@@ -41,7 +41,7 @@ export default function Hero() {
     <section className="relative flex min-h-svh flex-col items-center overflow-hidden px-6 pb-20 pt-0">
       {/* navy paisley texture + aurora */}
       <img
-        src="https://media.invitestory.in/midnight-stargaze/assets/navy-texture.webp"
+        src="/assets/navy-texture.webp"
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-60"
       />
@@ -57,7 +57,7 @@ export default function Hero() {
         style={{ transformOrigin: "top center" }}
       >
         <img
-          src="https://media.invitestory.in/midnight-stargaze/assets/garland-top.webp"
+          src="/assets/garland-top.webp"
           alt=""
           className="w-full object-cover object-top"
           style={{

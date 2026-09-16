@@ -97,9 +97,9 @@ export const downloadICS = () => {
   const ics = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//InviteStory//Wedding//EN",
+    "PRODID:-//RohitWedsShirin//Wedding//EN",
     "BEGIN:VEVENT",
-    `UID:${Date.now()}@invitestory`,
+    `UID:${Date.now()}@rohit-weds-shirin`,
     `DTSTAMP:${fmt(new Date())}`,
     `DTSTART:${fmt(start)}`,
     `DTEND:${fmt(end)}`,

@@ -38,14 +38,14 @@ export default function IntroGate({
         transition={{ duration: 1.5, delay: 0.35, ease: doorEase }}
       >
         <img
-          src="https://media.invitestory.in/midnight-stargaze/assets/navy-texture.webp"
+          src="/assets/navy-texture.webp"
           alt=""
           className="absolute inset-0 h-full w-full object-cover object-right opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0c0a24]/60 to-transparent" />
         {/* half mandala — splits as doors part */}
         <img
-          src="https://media.invitestory.in/midnight-stargaze/assets/mandala.png"
+          src="/assets/mandala.png"
           alt=""
           className="absolute right-[-42vmin] top-1/2 w-[84vmin] max-w-none -translate-y-1/2 opacity-25"
         />
@@ -59,13 +59,13 @@ export default function IntroGate({
         onAnimationComplete={() => opening && onOpened()}
       >
         <img
-          src="https://media.invitestory.in/midnight-stargaze/assets/navy-texture.webp"
+          src="/assets/navy-texture.webp"
           alt=""
           className="absolute inset-0 h-full w-full object-cover object-left opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-l from-[#0c0a24]/60 to-transparent" />
         <img
-          src="https://media.invitestory.in/midnight-stargaze/assets/mandala.png"
+          src="/assets/mandala.png"
           alt=""
           className="absolute left-[-42vmin] top-1/2 w-[84vmin] max-w-none -translate-y-1/2 opacity-25"
         />
@@ -92,7 +92,7 @@ export default function IntroGate({
       >
         {/* garland crown above the gate content */}
         <motion.img
-          src="https://media.invitestory.in/midnight-stargaze/assets/garland-top.webp"
+          src="/assets/garland-top.webp"
           alt=""
           className="pointer-events-none absolute inset-x-0 top-0 w-full object-cover object-top opacity-90"
           initial={{ opacity: 0, y: -30 }}

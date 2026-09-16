@@ -54,7 +54,7 @@ export default function InviteMessage() {
         </div>
 
         <motion.img
-          src="https://media.invitestory.in/midnight-stargaze/assets/mandala.png"
+          src="/assets/mandala.png"
           alt=""
           className="w-14 opacity-60 my-1"
           whileInView={{ rotate: 360 }}

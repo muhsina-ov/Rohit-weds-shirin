@@ -21,7 +21,7 @@ export default function Footer() {
     <footer className="relative flex min-h-[85svh] flex-col justify-end overflow-hidden pt-36 sm:pt-48">
       {/* background texture */}
       <img
-        src="https://media.invitestory.in/midnight-stargaze/assets/navy-texture.webp"
+        src="/assets/navy-texture.webp"
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-70"
       />
@@ -30,7 +30,7 @@ export default function Footer() {
       {/* hanging garland overlay — drapes over the footer top */}
       <div className="pointer-events-none absolute left-1/2 top-0 z-20 w-[150%] max-w-none -translate-x-1/2 sm:w-full">
         <img
-          src="https://media.invitestory.in/midnight-stargaze/assets/garland-top.webp"
+          src="/assets/garland-top.webp"
           alt=""
           className="w-full object-cover object-top"
           style={{
@@ -66,7 +66,7 @@ export default function Footer() {
 
       {/* closing message — from the couple */}
       <Reveal className="relative z-10 mx-auto mb-14 mt-6 flex max-w-sm flex-col items-center gap-4 px-6 text-center">
-        <img src="https://media.invitestory.in/midnight-stargaze/assets/mandala.png" alt="" className="w-14 opacity-80" />
+        <img src="/assets/mandala.png" alt="" className="w-14 opacity-80" />
         <p className="font-script text-gold text-4xl leading-snug">
           We look forward to seeing you at the ceremony.
         </p>
