@@ -178,7 +178,7 @@ export default function Hero() {
             }}
           />
           <img
-            src="/assets/couple.webp"
+            src="/assets/couple.webp?v=4"
             alt={`${wedding.groomFull} and ${wedding.brideFull}`}
             className="relative w-[60vw] max-w-[240px] drop-shadow-[0_18px_36px_rgba(0,0,0,0.6)]"
             style={{ animation: "float-soft 6s ease-in-out infinite" }}
