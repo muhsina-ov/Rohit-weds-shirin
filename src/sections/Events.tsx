@@ -66,39 +66,6 @@ export default function Events() {
             </p>
           </div>
         </div>
-
-        {/* ── ceremony flow ── */}
-        <div className="relative mx-auto mt-10 max-w-xs">
-          <p className="mb-6 text-center text-[11px] uppercase tracking-[0.4em] text-[#e2c88f]">
-            The Ceremony Flow
-          </p>
-          <div className="relative">
-            {/* spine */}
-            <div className="absolute bottom-3 left-[5px] top-3 w-px bg-gradient-to-b from-[#e2c88f]/50 via-[#eeb2c0]/40 to-transparent" />
-            <div className="flex flex-col gap-6">
-              {wedding.program.map((step, i) => (
-                <motion.div
-                  key={step.name}
-                  initial={{ opacity: 0, x: -18 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-40px" }}
-                  transition={{ delay: i * 0.12, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                  className="relative flex items-baseline justify-between gap-4 pl-7"
-                >
-                  <span
-                    className="absolute left-0 top-1.5 h-[11px] w-[11px] rounded-full bg-[#eeb2c0] shadow-[0_0_10px_2px_rgba(238,178,192,0.5)]"
-                  />
-                  <span className="font-display text-lg text-[#f5eee2]">
-                    {step.name}
-                  </span>
-                  <span className="shrink-0 text-[12px] uppercase tracking-[0.15em] text-[#e2c88f]">
-                    {step.time}
-                  </span>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
       </Reveal>
     </section>
   );
