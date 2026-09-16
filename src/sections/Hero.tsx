@@ -196,7 +196,7 @@ export default function Hero() {
             {wedding.dateLabel}
           </p>
           <p className="text-[11px] uppercase tracking-[0.3em] text-[#e2c88f]">
-            {wedding.timeLabel} • {wedding.venue.name}
+            {wedding.venue.name}
           </p>
         </motion.div>
       </div>

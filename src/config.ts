@@ -12,10 +12,10 @@ export const wedding = {
   hashtag: "#RohitWedsShirin",
   monogram: "R ♡ S",
 
-  // Wedding muhurat / timing (target: 22nd Nov 2026 at 6:00 PM IST)
+  // Wedding muhurat / timing (target: 22nd Nov 2026)
   dateISO: "2026-11-22T18:00:00+05:30",
   dateLabel: "Sunday, 22nd November 2026",
-  timeLabel: "6:00 PM Onwards",
+  timeLabel: "",
 
   venue: {
     name: "Orchid Garden & Banquet",
@@ -29,9 +29,10 @@ export const wedding = {
     translation: "In the name of Allah, the Most Gracious, the Most Merciful",
     kicker: "IN THE NAME OF ALLAH, THE MOST MERCIFUL",
     invitation: "We joyfully invite you to celebrate our wedding",
-    quranRef: "Surah Ar-Rum 30:21",
-    quranVerse:
-      "“And among His signs is that He created for you mates from among yourselves, that you may find tranquility in them; and He placed between you love and mercy.”",
+    paragraph1:
+      "We seek your blessings and request the pleasure of your gracious presence on the auspicious occasion of our marriage ceremony.",
+    paragraph2:
+      "Your presence would add immense happiness to the celebration, and we would be honored to have you join us on this special day.",
     text: "We seek your blessings and request the pleasure of your gracious presence on the auspicious occasion of our marriage ceremony.\n\nYour presence would add immense happiness to the celebration, and we would be honored to have you join us on this special day.",
   },
 
@@ -44,7 +45,7 @@ export const wedding = {
       dayLabel: "Sunday",
       dayNum: "22",
       monthLabel: "November 2026",
-      time: "6:00 PM Onwards",
+      time: "",
       venue: "Orchid Garden & Banquet, Dakshin Barasat",
       note: "Nikah ceremony and reception dinner celebrating our wedding ceremony.",
     },
