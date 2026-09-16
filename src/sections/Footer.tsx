@@ -18,7 +18,7 @@ export default function Footer() {
     }
   };
   return (
-    <footer className="relative flex min-h-[80svh] flex-col justify-end overflow-hidden">
+    <footer className="relative flex min-h-[85svh] flex-col justify-end overflow-hidden pt-36 sm:pt-48">
       {/* background texture */}
       <img
         src="https://media.invitestory.in/midnight-stargaze/assets/navy-texture.webp"
@@ -40,8 +40,8 @@ export default function Footer() {
         />
       </div>
 
-      {/* marquee strip */}
-      <div className="relative z-10 mb-6 overflow-hidden border-y border-[#e2c88f]/25 py-3">
+      {/* marquee strip — positioned safely below the hanging garland flowers to prevent cutting */}
+      <div className="relative z-10 mb-6 mt-16 sm:mt-20 overflow-hidden border-y border-[#e2c88f]/25 py-3">
         <div
           className="flex w-max whitespace-nowrap"
           style={{ animation: "marquee 22s linear infinite" }}
@@ -51,27 +51,27 @@ export default function Footer() {
               key={n}
               className="font-display px-4 text-sm uppercase tracking-[0.4em] text-[#e2c88f]"
             >
-              {Array(6).fill(`${wedding.hashtag} ✦ ${wedding.dateLabel} ✦ `).join("")}
+              {Array(6).fill(`${wedding.hashtag} ♡ ${wedding.dateLabel} ♡ `).join("")}
             </span>
           ))}
         </div>
       </div>
 
-      {/* giant outlined names in the flow */}
+      {/* giant outlined names in the flow — Groom first, then Bride */}
       <div className="pointer-events-none relative z-0 -mb-8 flex select-none justify-center overflow-hidden">
         <span className="font-display text-outline-gold whitespace-nowrap text-[9vw] font-semibold uppercase leading-none tracking-tight opacity-45 sm:text-[8vw]">
-          {wedding.bride} ♥ {wedding.groom}
+          {wedding.groom} ♡ {wedding.bride}
         </span>
       </div>
 
-      {/* closing message */}
-      <Reveal className="relative z-10 mx-auto mb-14 mt-4 flex max-w-sm flex-col items-center gap-4 px-6 text-center">
+      {/* closing message — from the couple */}
+      <Reveal className="relative z-10 mx-auto mb-14 mt-6 flex max-w-sm flex-col items-center gap-4 px-6 text-center">
         <img src="https://media.invitestory.in/midnight-stargaze/assets/mandala.png" alt="" className="w-14 opacity-80" />
         <p className="font-script text-gold text-4xl leading-snug">
-          We can't wait to celebrate with you
+          We look forward to seeing you at the ceremony.
         </p>
-        <p className="text-[11px] uppercase tracking-[0.35em] text-[#f5eee2]/60">
-          With love, The Mondal & Ezaz Families
+        <p className="text-[11px] uppercase tracking-[0.35em] text-[#f5eee2]/70 font-medium">
+          WITH LOVE, LAUGHTER, AND MEMORIES TO LAST A LIFETIME
         </p>
         <div className="hairline-gold mt-2 w-32" />
         <motion.button
@@ -83,7 +83,7 @@ export default function Footer() {
               : "border-[#e2c88f]/25 text-[#f5eee2]/40 hover:border-[#e2c88f]/50 hover:text-[#f5eee2]/70"
           }`}
         >
-          {copied ? "Copied ✓" : `${wedding.hashtag} · tap to copy`}
+          {copied ? "Copied ♡" : `${wedding.hashtag} · tap to copy`}
         </motion.button>
       </Reveal>
     </footer>

@@ -49,16 +49,16 @@ export default function Couple() {
       <SectionHeading kicker="The Couple" title="Two Souls, One Journey" />
 
       <div className="relative mx-auto flex max-w-md flex-col items-center gap-8">
-        {/* monogram between the two arch cards */}
+        {/* Groom card first, then Bride card */}
         <div className="flex w-full items-stretch gap-4">
-          <ArchCard
-            name={wedding.brideFull}
-            parents={wedding.brideParents}
-            delay={0.1}
-          />
           <ArchCard
             name={wedding.groomFull}
             parents={wedding.groomParents}
+            delay={0.1}
+          />
+          <ArchCard
+            name={wedding.brideFull}
+            parents={wedding.brideParents}
             delay={0.2}
           />
         </div>
@@ -67,8 +67,8 @@ export default function Couple() {
           <span className="font-display text-lg tracking-[0.35em] text-[#e2c88f]">
             {wedding.monogram}
           </span>
-          <p className="font-display text-base italic text-[#f5eee2]/70">
-            The Mondal & Ezaz Families
+          <p className="font-display text-base italic text-[#f5eee2]/80">
+            Rohit & Shirin · Bound in Love & Blessings
           </p>
         </Reveal>
       </div>

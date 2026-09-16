@@ -69,7 +69,7 @@ export default function Hero() {
       </motion.div>
 
       <div className="relative z-10 mt-[19svh] flex flex-col items-center sm:mt-[18svh]">
-        {/* ── Mughal arch card ── */}
+        {/* Mughal arch card */}
         <motion.div
           initial={{ opacity: 0, scale: 0.94, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -134,13 +134,14 @@ export default function Hero() {
             >
               {wedding.verse.invitation}
             </motion.p>
+            {/* Groom Name First, then Bride Name */}
             <motion.h1
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.9 }}
               className="mt-8 sm:mt-9 font-script text-[13vw] leading-[1.05] text-[#4a3f78] sm:text-5xl"
             >
-              {wedding.bride}
+              {wedding.groom}
             </motion.h1>
             <motion.span
               initial={{ opacity: 0 }}
@@ -156,7 +157,7 @@ export default function Hero() {
               transition={{ delay: 1.45, duration: 0.9 }}
               className="font-script text-[13vw] leading-[1.05] text-[#4a3f78] sm:text-5xl"
             >
-              {wedding.groom}
+              {wedding.bride}
             </motion.h1>
           </div>
         </motion.div>
@@ -177,9 +178,9 @@ export default function Hero() {
             }}
           />
           <img
-            src="https://media.invitestory.in/midnight-stargaze/assets/couple.webp"
-            alt={`${wedding.brideFull} and ${wedding.groomFull}`}
-            className="relative w-[60vw] max-w-[230px] drop-shadow-[0_18px_36px_rgba(0,0,0,0.6)]"
+            src="/assets/couple.webp"
+            alt={`${wedding.groomFull} and ${wedding.brideFull}`}
+            className="relative w-[60vw] max-w-[240px] drop-shadow-[0_18px_36px_rgba(0,0,0,0.6)]"
             style={{ animation: "float-soft 6s ease-in-out infinite" }}
           />
         </motion.div>
@@ -195,7 +196,7 @@ export default function Hero() {
             {wedding.dateLabel}
           </p>
           <p className="text-[11px] uppercase tracking-[0.3em] text-[#e2c88f]">
-            {wedding.timeLabel} · {wedding.venue.name}
+            {wedding.timeLabel} • {wedding.venue.name}
           </p>
         </motion.div>
       </div>

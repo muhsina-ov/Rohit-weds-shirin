@@ -1,16 +1,16 @@
-// ─────────────────────────────────────────────────────────────
+// ==============================================================
 //  WEDDING CONFIG — Rohit weds Shirin
-// ─────────────────────────────────────────────────────────────
+// ==============================================================
 
 export const wedding = {
-  bride: "Shirin",
   groom: "Rohit",
-  brideFull: "Shirin",
+  bride: "Shirin",
   groomFull: "Rohit",
-  brideParents: "Daughter of Mr. Md Ezaz & Mrs. Shamsunnahar Khatun",
+  brideFull: "Shirin",
   groomParents: "Son of Mr. Abdur Rashid Mondal & Mrs. Nur Nahar Begum",
+  brideParents: "Daughter of Mr. Md Ezaz & Mrs. Shamsunnahar Khatun",
   hashtag: "#RohitWedsShirin",
-  monogram: "R · S",
+  monogram: "R ♡ S",
 
   // Wedding muhurat / timing (target: 22nd Nov 2026 at 6:00 PM IST)
   dateISO: "2026-11-22T18:00:00+05:30",
@@ -25,14 +25,14 @@ export const wedding = {
   },
 
   verse: {
-    arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    arabic: "بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ",
     translation: "In the name of Allah, the Most Gracious, the Most Merciful",
-    kicker: "TOGETHER WITH THEIR FAMILIES",
-    invitation: "You are cordially invited to the wedding celebration of",
+    kicker: "IN THE NAME OF ALLAH, THE MOST MERCIFUL",
+    invitation: "We joyfully invite you to celebrate our wedding",
     quranRef: "Surah Ar-Rum 30:21",
     quranVerse:
       "“And among His signs is that He created for you mates from among yourselves, that you may find tranquility in them; and He placed between you love and mercy.”",
-    text: "Request the pleasure of your company to celebrate the wedding ceremony and blessed union of their children.",
+    text: "We seek your blessings and request the pleasure of your gracious presence on the auspicious occasion of our marriage ceremony.\n\nYour presence would add immense happiness to the celebration, and we would be honored to have you join us on this special day.",
   },
 
   // The main celebration event
@@ -46,7 +46,7 @@ export const wedding = {
       monthLabel: "November 2026",
       time: "6:00 PM Onwards",
       venue: "Orchid Garden & Banquet, Dakshin Barasat",
-      note: "Nikah ceremony and reception dinner celebrating the union of Rohit & Shirin.",
+      note: "Nikah ceremony and reception dinner celebrating our wedding ceremony.",
     },
   ],
 
@@ -61,7 +61,7 @@ export const wedding = {
   sections: {
     events: true,
     venue: true,
-    countdown: false, // Customer explicitly requested: "I don't need the countdown"
+    countdown: false,
   },
 
   music: {
@@ -79,7 +79,7 @@ export const googleCalendarUrl = () => {
     d.toISOString().replace(/[-:]|\.\d{3}/g, "").slice(0, 15) + "Z";
   const params = new URLSearchParams({
     action: "TEMPLATE",
-    text: `${wedding.bride} weds ${wedding.groom} — Wedding Celebration`,
+    text: `${wedding.groom} weds ${wedding.bride} — Wedding Celebration`,
     dates: `${fmt(start)}/${fmt(end)}`,
     details: `${wedding.venue.name} — ${wedding.venue.address}. ${wedding.hashtag}`,
     location: `${wedding.venue.name}, ${wedding.venue.address}`,
@@ -102,7 +102,7 @@ export const downloadICS = () => {
     `DTSTAMP:${fmt(new Date())}`,
     `DTSTART:${fmt(start)}`,
     `DTEND:${fmt(end)}`,
-    `SUMMARY:${wedding.bride} weds ${wedding.groom}`,
+    `SUMMARY:${wedding.groom} weds ${wedding.bride}`,
     `DESCRIPTION:${wedding.venue.name} — ${wedding.venue.address}`,
     `LOCATION:${wedding.venue.name}\\, ${wedding.venue.address}`,
     "END:VEVENT",
@@ -112,7 +112,7 @@ export const downloadICS = () => {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = `${wedding.bride}-${wedding.groom}-wedding.ics`;
+  a.download = `${wedding.groom}-${wedding.bride}-wedding.ics`;
   a.click();
   URL.revokeObjectURL(url);
 };

@@ -31,7 +31,7 @@ export default function IntroGate({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.4 }}
     >
-      {/* ── Left door ── */}
+      {/* Left door */}
       <motion.div
         className="absolute inset-y-0 left-0 w-1/2 overflow-hidden bg-[#0c0a24]"
         animate={opening ? { x: "-100%" } : { x: 0 }}
@@ -51,7 +51,7 @@ export default function IntroGate({
         />
       </motion.div>
 
-      {/* ── Right door ── */}
+      {/* Right door */}
       <motion.div
         className="absolute inset-y-0 right-0 w-1/2 overflow-hidden bg-[#0c0a24]"
         animate={opening ? { x: "100%" } : { x: 0 }}
@@ -71,7 +71,7 @@ export default function IntroGate({
         />
       </motion.div>
 
-      {/* ── Light spilling through the seam ── */}
+      {/* Light spilling through the seam */}
       <motion.div
         className="pointer-events-none absolute inset-y-0 left-1/2 w-[70px] -translate-x-1/2"
         style={{
@@ -84,7 +84,7 @@ export default function IntroGate({
         transition={{ duration: 1.5, delay: 0.35, ease: doorEase }}
       />
 
-      {/* ── Gate content ── */}
+      {/* Gate content */}
       <motion.div
         className="absolute inset-0 flex flex-col items-center justify-center px-6"
         animate={opening ? { opacity: 0, y: -26 } : { opacity: 1, y: 0 }}
@@ -132,8 +132,9 @@ export default function IntroGate({
           <p className="font-display text-sm sm:text-base italic text-[#eeb2c0]">
             {wedding.verse.invitation}
           </p>
+          {/* Groom First, then Bride */}
           <h1 className="font-script text-gold text-6xl leading-tight sm:text-7xl drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]">
-            {wedding.bride} & {wedding.groom}
+            {wedding.groom} & {wedding.bride}
           </h1>
 
           <motion.button
@@ -145,7 +146,7 @@ export default function IntroGate({
               className="absolute inset-0 rounded-full border border-[#e2c88f]/40"
               style={{ animation: "glow-pulse 2.6s ease-in-out infinite" }}
             />
-            Open Invitation ✦
+            Open Invitation ♡
           </motion.button>
         </motion.div>
       </motion.div>
