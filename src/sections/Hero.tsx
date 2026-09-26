@@ -68,7 +68,7 @@ export default function Hero() {
         <FairyLights count={22} className="!inset-x-0 !top-0 h-[55%]" />
       </motion.div>
 
-      <div className="relative z-10 mt-[19svh] flex flex-col items-center sm:mt-[18svh]">
+      <div className="relative z-20 mt-[19svh] flex flex-col items-center sm:mt-[18svh]">
         {/* Mughal arch card */}
         <motion.div
           initial={{ opacity: 0, scale: 0.94, y: 30 }}
@@ -130,7 +130,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="mt-1.5 font-display text-[10px] sm:text-[11px] italic leading-snug text-[#c96e8c] max-w-[230px] text-center"
+              className="mt-1.5 font-display text-[11px] sm:text-[12.5px] font-semibold italic leading-snug text-[#b82759] max-w-[240px] text-center"
             >
               {wedding.verse.invitation}
             </motion.p>
@@ -178,9 +178,9 @@ export default function Hero() {
             }}
           />
           <img
-            src="/assets/couple.webp?v=4"
+            src="/assets/couple.webp?v=5"
             alt={`${wedding.groomFull} and ${wedding.brideFull}`}
-            className="relative w-[60vw] max-w-[240px] drop-shadow-[0_18px_36px_rgba(0,0,0,0.6)]"
+            className="relative w-[68vw] max-w-[270px] drop-shadow-[0_18px_36px_rgba(0,0,0,0.6)]"
             style={{ animation: "float-soft 6s ease-in-out infinite" }}
           />
         </motion.div>

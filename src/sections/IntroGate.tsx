@@ -129,7 +129,7 @@ export default function IntroGate({
           <p className="font-display text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.4em] text-[#f5eee2]/80">
             {wedding.verse.kicker}
           </p>
-          <p className="font-display text-sm sm:text-base italic text-[#eeb2c0]">
+          <p className="font-display text-sm sm:text-base italic font-medium text-[#ffd3de] drop-shadow-[0_2px_10px_rgba(255,211,222,0.4)]">
             {wedding.verse.invitation}
           </p>
           {/* Groom First, then Bride */}
